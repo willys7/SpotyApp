@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {APP_ROUTING} from './app.routes'
 import {SpotifyService} from './services/spotify.service';
 import { WithoutphotoPipe } from './pipes/withoutphoto.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 import { ArtistComponent } from './components/artist/artist.component';
 
 
@@ -20,7 +21,8 @@ import { ArtistComponent } from './components/artist/artist.component';
     SearchComponent,
     NavbarComponent,
     WithoutphotoPipe,
-    ArtistComponent
+    ArtistComponent,
+    DomseguroPipe
   ],
   imports: [
     BrowserModule,
