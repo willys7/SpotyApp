@@ -12,6 +12,7 @@ export class ArtistComponent implements OnInit {
   constructor(private route:ActivatedRoute, public _spotify:SpotifyService ) { }
 
   artist:any = {};
+  songs:any = {};
   ngOnInit() {
     this.route.params.map( params => params['id']).subscribe(id => {
       console.log(id);
@@ -19,6 +20,11 @@ export class ArtistComponent implements OnInit {
         this.artist = artist;
         console.log(this.artist);
       });
+
+      this._spotify.getTop(id).map((resp:any) => resp.tracks).subscribe(songs =>{
+        this.songs = songs;
+        console.log(songs);
+      })
     });
   }
 

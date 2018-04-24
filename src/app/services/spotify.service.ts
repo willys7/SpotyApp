@@ -32,4 +32,10 @@ export class SpotifyService {
     return this.http.get(url, {headers});
   }
 
+  getTop(id:string){
+    let url = `${this.baseUrl}artists/${id}/top-tracks?country=US`
+    let headers = this.getHeaders();
+    return this.http.get(url, {headers});
+  }
+
 }
