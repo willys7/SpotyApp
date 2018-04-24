@@ -12,6 +12,7 @@ hr{
   border-color: white;
 }
 
+
 .jumbotron{
   background-color: #171717;
 }
@@ -44,6 +45,9 @@ hr{
   border-radius: 100%;
 }
 
+.img-50{
+  width: 50px;
+}
 
 /* Animaciones */
 .animated {

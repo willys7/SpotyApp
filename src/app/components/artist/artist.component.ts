@@ -18,7 +18,7 @@ export class ArtistComponent implements OnInit {
       console.log(id);
       this._spotify.getArtist(id).subscribe(artist =>{
         this.artist = artist;
-        console.log(this.artist);
+        console.log(this.artist.images[1].url);
       });
 
       this._spotify.getTop(id).map((resp:any) => resp.tracks).subscribe(songs =>{
