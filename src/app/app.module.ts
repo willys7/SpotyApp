@@ -9,7 +9,8 @@ import { SearchComponent } from './components/search/search.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {APP_ROUTING} from './app.routes'
 import {SpotifyService} from './services/spotify.service';
-import { WithoutphotoPipe } from './pipes/withoutphoto.pipe'
+import { WithoutphotoPipe } from './pipes/withoutphoto.pipe';
+import { ArtistComponent } from './components/artist/artist.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { WithoutphotoPipe } from './pipes/withoutphoto.pipe'
     HomeComponent,
     SearchComponent,
     NavbarComponent,
-    WithoutphotoPipe
+    WithoutphotoPipe,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,
